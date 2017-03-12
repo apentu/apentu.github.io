@@ -1,10 +1,12 @@
 .site-header {
   height: 60px;
+  border-bottom: 1px solid lightgrey;
+  background-color: white;
 }
 
 .site-logo {
-  height: 50px;
-  margin: 5px 0;
+  height: 40px;
+  margin: 10px 0;
 }
 .main-nav {
   display: inline-block;
@@ -19,13 +21,19 @@
   li {
     line-height: 60px;
     float: left;
-    margin-right: 15px;
     &:last-child {
-      margin-right: 0;
     }
     a {
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+      padding: 0 20px;
+      color: $logo-blue;
       display: block;
       text-decoration: none;
+      transition: all .3s;
+      &:hover {
+        background-color: $logo-blue;
+        color: white;
+      }
     }
   }
 }

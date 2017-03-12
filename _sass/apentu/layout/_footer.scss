@@ -1,0 +1,35 @@
+.site-footer {
+  font-family: 'Open Sans';
+  background-color: $footer-color;
+  padding: 20px 0;
+  font-size: 12px;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    float: left;
+    border-right: 1px solid lightgrey;
+    padding: 0 10px;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      border-right: none;
+    }
+    a {
+      text-decoration: none;
+      color: $logo-blue;
+      &:hover {
+        border-bottom: 1px solid $logo-blue;
+      }
+    }
+  }
+}
+
+.apentu-info {
+  float: right;
+  color: darken(lightgrey, 30);
+}

@@ -1,17 +1,22 @@
+$button-border: 2px;
+
 .apentu-btn {
+  font-family: 'Open Sans';
   padding: 10px;
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
-  border: 1px solid white;
+  border: $button-border solid white;
+  transition: all .2s;
+  text-align: center;
 }
 
 .apentu-btn--clear {
   color: white;
-  border: 1px solid white;
+  border: $button-border solid white;
   &:hover {
     background-color: $logo-blue;
-    border: 1px solid $logo-blue;
+    border: $button-border solid $logo-blue;
   }
 }
 
@@ -25,6 +30,28 @@
   }
 }
 
+.apentu-btn--lightblue--reverse {
+  color: $lightblue-one;
+  border-color: $lightblue-one;
+  &:hover {
+    background-color: $lightblue-one;
+    color: white;
+  }
+}
+
+.apentu-btn--logoblue--reverse {
+  color: $logo-blue;
+  border-color: $logo-blue;
+  &:hover {
+    background-color: $logo-blue;
+    color: white;
+  }
+}
+
 .apentu-btn--floatright {
   float: right;
+}
+
+.apentu-btn--fullwidth {
+  width: 100%;
 }

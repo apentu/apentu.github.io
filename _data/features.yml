@@ -1,0 +1,59 @@
+- name: Lorem
+  basic: true
+  standard: true
+  premium: true
+
+- name: Ipsum
+  basic: true
+  standard: true
+  premium: true
+
+- name: Lorem
+  basic: true
+  standard: true
+  premium: true
+
+- name: Ipsum
+  basic: true
+  standard: true
+  premium: true
+
+- name: Lorem
+  basic: false
+  standard: true
+  premium: true
+
+- name: Ipsum
+  basic: true
+  standard: true
+  premium: true
+
+- name: Lorem
+  basic: false
+  standard: true
+  premium: true
+
+- name: Ipsum
+  basic: false
+  standard: false
+  premium: true
+
+- name: Lorem
+  basic: false
+  standard: false
+  premium: true
+
+- name: Ipsum
+  basic: false
+  standard: false
+  premium: true
+
+- name: Lorem
+  basic: true
+  standard: true
+  premium: true
+
+- name: Ipsum
+  basic: true
+  standard: true
+  premium: true

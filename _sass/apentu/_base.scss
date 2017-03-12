@@ -16,6 +16,11 @@
   color: white;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  margin-top: 0;
+}
+
  body {
    //padding: 20px 0 0 0;
  }
@@ -23,6 +28,7 @@
 .wrapper {
   max-width: $content-width;
   margin: 0 auto;
+  padding: 0 20px;
 }
 .wrapper-full {
   width: 100%;
@@ -31,7 +37,7 @@
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
-  background-color: $background-color;
+  background-color: $footer-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;

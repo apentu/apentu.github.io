@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+<div class="apentu-section apentu-section--platinum">
+  <div class="wrapper">
+    <div class="grid grid--center">
+      <div class="grid__item two-thirds pricing">
+        <h1>Pricing</h1>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat.</span>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="grid__item one-third">
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <span class="pricing-card__header__title">Basic</span>
+          </div>
+          <div class="pricing-card__content">
+            <a class="apentu-btn apentu-btn--fullwidth apentu-btn--lightblue--reverse" href="#">Request Info</a>
+            <ul>
+              {% for feature in site.data.features %}
+              {% if feature.basic == true %}
+              <li><span><i class="fa fa-check" aria-hidden="true"></i></span>{{ feature.name }}</li>
+              {% endif %}
+              {% endfor %}
+              {% for feature in site.data.features %}
+              {% if feature.basic == false %}
+              <li class="no-feature"><span><i class="fa fa-times" aria-hidden="true"></i></span>{{ feature.name }}</li>
+              {% endif %}
+              {% endfor %}
+              <!-- <li><span><i class="fa fa-check" aria-hidden="true"></i></span>Item 2</li>
+              <li><span><i class="fa fa-check" aria-hidden="true"></i></span>Item 3</li>
+              <li><span><i class="fa fa-check" aria-hidden="true"></i></span>Item 4</li> -->
+            </ul>
+          </div>
+        </div>
+      </div><!--
+   --><div class="grid__item one-third">
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <span class="pricing-card__header__title">Standard</span>
+          </div>
+          <div class="pricing-card__content">
+            <a class="apentu-btn apentu-btn--fullwidth apentu-btn--lightblue--reverse" href="#">Request Info</a>
+            <ul>
+              {% for feature in site.data.features %}
+              {% if feature.standard == true %}
+              <li><span><i class="fa fa-check" aria-hidden="true"></i></span>{{ feature.name }}</li>
+              {% endif %}
+              {% endfor %}
+              {% for feature in site.data.features %}
+              {% if feature.standard == false %}
+              <li class="no-feature"><span><i class="fa fa-times" aria-hidden="true"></i></span>{{ feature.name }}</li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div><!--
+   --><div class="grid__item one-third">
+        <div class="pricing-card">
+          <div class="pricing-card__header pricing-card__header--premium">
+            <span class="pricing-card__header__title">Premium</span>
+          </div>
+          <div class="pricing-card__content pricing-card__content--premium">
+            <a class="apentu-btn apentu-btn--fullwidth apentu-btn--logoblue--reverse" href="#">Request Info</a>
+            <ul>
+              {% for feature in site.data.features %}
+              {% if feature.premium == true %}
+              <li><span><i class="fa fa-check" aria-hidden="true"></i></span>{{ feature.name }}</li>
+              {% endif %}
+              {% endfor %}
+              {% for feature in site.data.features %}
+              {% if feature.premium == false %}
+              <li class="no-feature"><span><i class="fa fa-times" aria-hidden="true"></i></span>{{ feature.name }}</li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

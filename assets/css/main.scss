@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+$base-font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -21,13 +21,14 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Apentu colors
-
+$footer-color:      #f0f0f0;
 $logo-blue:         #2f96b2;
 $dark-blue-one:     #003554;
 $dark-blue-two:     #051923;
 $lightblue-one:     #006494;
 $lightblue-two:     #00a6fb;
 $apentu-lightgrey:  #F4F4F4;
+$red:               #c33c54;
 
 // Width of the content area
 $content-width:    1070px;

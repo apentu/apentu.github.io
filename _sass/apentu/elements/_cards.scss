@@ -1,14 +1,81 @@
-.apentu-card {
-  height: 200px;
+$icon-size: 25px;
+$card-padding: 20px;
+
+.apentu-card,
+.pricing-card {
   width: 100%;
   background-color: white;
+  -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.03);
+  -moz-box-shadow: 0 2px 0 rgba(0,0,0,0.03);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.03);
+}
+
+.apentu-card__header,
+.pricing-card__header {
+  padding: $card-padding;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 .apentu-card__header {
-  padding: 10px;
   border-bottom: 1px solid $grey-color-light;
+  font-size: 20px;
+  font-weight: 700;
+  color: $dark-blue-one;
+  line-height: $icon-size;
 }
 
 .apentu-card__header__icon {
   float: right;
+  font-size: $icon-size;
+  color: $logo-blue;
+}
+
+.apentu-card__content,
+.pricing-card__content {
+  padding: $card-padding;
+}
+
+.pricing-card__header {
+  text-align: center;
+  font-size: 20px;
+  background-color: $lightblue-one;
+  color: white;
+}
+
+.pricing-card__header--premium {
+  background-color: $logo-blue;
+}
+
+.pricing-card__content {
+  a {
+    margin-bottom: $card-padding;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  span {
+    color: $lightblue-one;
+    margin-right: 10px;
+  }
+  .fa-times {
+    color: $red;
+  }
+  .no-feature {
+    text-decoration: line-through;
+    color: $grey-color-light;
+  }
+}
+
+.pricing-card__content--premium {
+  span {
+    color: $logo-blue;
+  }
 }

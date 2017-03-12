@@ -1,0 +1,14 @@
+.contact-form {
+  width: 100%;
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid $grey-color-light;
+  }
+}

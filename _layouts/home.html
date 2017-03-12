@@ -3,37 +3,38 @@ layout: default
 ---
 <section>
   <div class="hero">
-    <div class="wrapper">
-      <div class="grid">
-        <div class="grid__item one-half hero-head">
-          <h1>Never miss a placement opportunity with Apentu.</h1>
-          <a class="apentu-btn apentu-btn--clear" href="#">Get in Touch</a>
+    <div class="apentu-section">
+      <div class="wrapper">
+        <div class="grid">
+          <div class="grid__item one-half hero-head">
+            <h1>Never miss a placement opportunity with Apentu.</h1>
+            <a class="apentu-btn apentu-btn--clear" href="#">Get in Touch</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 <section>
-  <div class="wrapper">
-    <div class="grid">
-      <div class="grid__item one-half">
-          <div class="message-container">
-            <ul class="messages">
-              <li class="message--user"><span>ththhrthrthrth hurihui rhguirg irugirigh riguirhg ruighreuiguier hguiergiu herugier huighierg</span></li>
-              <li class="message--apentu"><span>reghrgur giuhrgui rhgihrguirgiu heriug reuigh ruigh uriegh uirhg uirhg uirh</span></li>
-              <li class="message--user"><span>rgjirojg orijgior giorjgoi jroigjr oigor g</span></li>
-              <li class="message--apentu"><span>rghruioghriugh ruighr ugih ruigh riug hirg</span></li>
-              <li class="message--user"><span>regjrhgriuo ghuihuig uirg iurhegiuh eruig erg</span></li>
-              <li class="message--apentu"><span>rghuir giurh guirhe guihr eguih righ reig</span></li>
-            </ul>
-          </div>
-      </div><!--
+  <div class="apentu-section apentu-section--platinum">
+    <div class="wrapper">
+      <div class="grid">
+        <div class="grid__item one-half">
+            <div class="message-container">
+              <ul class="messages">
+                {% for message in site.data.messages %}
+                <li class="message--{{ message.type }}"><span>{{ message.message }}</span></li>
+                {% endfor %}
+              </ul>
+            </div>
+        </div><!--
 
-   --><div class="grid__item one-half">
-        <h1>Lorem Ipsum</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat. Cras nulla tellus, condimentum vitae semper pellentesque, pellentesque ac nisi. Pellentesque ac sem nec dui sollicitudin rhoncus a tincidunt urna. Donec id placerat velit. Etiam a sem a velit imperdiet euismod. Curabitur vestibulum, neque at vehicula sollicitudin, lacus ex tincidunt quam, in faucibus tellus enim quis felis. Donec cursus dui et libero porta, quis ornare felis bibendum. Sed vehicula ullamcorper massa vel consectetur. Nulla maximus purus leo, sed lacinia arcu consectetur nec. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce at feugiat ligula. Phasellus rutrum diam nec mollis faucibus. Etiam et nisi vitae nulla dapibus imperdiet. </p>
-        <p>Donec libero ligula, porttitor ut nisl sed, condimentum aliquam lectus. Donec eget mi ut quam finibus tincidunt. Etiam nec nisl nisl. Nam ac justo et nisl rutrum imperdiet. Morbi ullamcorper arcu id lacus fringilla rhoncus. Maecenas odio nisl, sollicitudin et faucibus bibendum, aliquam et nunc. Donec pulvinar, massa sed pharetra rhoncus, nibh risus pulvinar magna, nec egestas ipsum arcu sed tellus.</p>
-        <a class="apentu-btn apentu-btn--lightblue apentu-btn--floatright" href="#">See Demonstration</a>
+     --><div class="grid__item one-half">
+          <h1>Lorem Ipsum</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat. Cras nulla tellus, condimentum vitae semper pellentesque, pellentesque ac nisi. Pellentesque ac sem nec dui sollicitudin rhoncus a tincidunt urna. Donec id placerat velit. Etiam a sem a velit imperdiet euismod. Curabitur vestibulum, neque at vehicula sollicitudin, lacus ex tincidunt quam, in faucibus tellus enim quis felis. Donec cursus dui et libero porta, quis ornare felis bibendum. Sed vehicula ullamcorper massa vel consectetur. Nulla maximus purus leo, sed lacinia arcu consectetur nec. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce at feugiat ligula. Phasellus rutrum diam nec mollis faucibus. Etiam et nisi vitae nulla dapibus imperdiet. </p>
+          <p>Donec libero ligula, porttitor ut nisl sed, condimentum aliquam lectus. Donec eget mi ut quam finibus tincidunt. Etiam nec nisl nisl. Nam ac justo et nisl rutrum imperdiet. Morbi ullamcorper arcu id lacus fringilla rhoncus. Maecenas odio nisl, sollicitudin et faucibus bibendum, aliquam et nunc. Donec pulvinar, massa sed pharetra rhoncus, nibh risus pulvinar magna, nec egestas ipsum arcu sed tellus.</p>
+          <a class="apentu-btn apentu-btn--lightblue apentu-btn--floatright" href="#">See Demonstration</a>
+        </div>
       </div>
     </div>
   </div>
@@ -41,12 +42,21 @@ layout: default
 <section>
   <div class="apentu-section apentu-section--darkblue">
     <div class="wrapper">
+      <div class="grid grid--center">
+        <div class="grid__item two-thirds features">
+          <h1>Our Features</h1>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat.</span>
+        </div>
+      </div>
       <div class="grid">
         <div class="grid__item one-third">
           <div class="apentu-card">
             <div class="apentu-card__header">
-              <span class="apentu-card__header__title">Lorem Ipsum</span>
-              <span class="apentu-card__header__icon"><i class="fa fa-hourglass-start" aria-hidden="true"></i></span>
+              <span class="apentu-card__header__title">Feature One</span>
+              <span class="apentu-card__header__icon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+            </div>
+            <div class="apentu-card__content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat.
             </div>
           </div>
         </div><!--
@@ -54,8 +64,11 @@ layout: default
      --><div class="grid__item one-third">
          <div class="apentu-card">
            <div class="apentu-card__header">
-             <span class="apentu-card__header__title">Lorem Ipsum</span>
-             <span class="apentu-card__header__icon"><i class="fa fa-hourglass-start" aria-hidden="true"></i></span>
+             <span class="apentu-card__header__title">Feature Two</span>
+             <span class="apentu-card__header__icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+           </div>
+           <div class="apentu-card__content">
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat.
            </div>
          </div>
         </div><!--
@@ -63,8 +76,11 @@ layout: default
      --><div class="grid__item one-third">
          <div class="apentu-card">
            <div class="apentu-card__header">
-             <span class="apentu-card__header__title">Lorem Ipsum</span>
-             <span class="apentu-card__header__icon"><i class="fa fa-hourglass-start" aria-hidden="true"></i></span>
+             <span class="apentu-card__header__title">Feature Three</span>
+             <span class="apentu-card__header__icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
+           </div>
+           <div class="apentu-card__content">
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat.
            </div>
          </div>
         </div>

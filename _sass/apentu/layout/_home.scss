@@ -21,6 +21,7 @@
 }
 
 .messages {
+  font-family: 'Open Sans';
   list-style: none;
   padding: 0;
   margin: 0;
@@ -31,9 +32,17 @@
 .message--apentu  {
   display: block;
   clear: both;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all .3s;
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.js-message {
+  transform: translate(0);
+  opacity: 1;
 }
 
 .message--user span,
@@ -45,19 +54,32 @@
   max-width: 60%;
   word-wrap: break-word;
   clear: both;
-  -webkit-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.47);
-  -moz-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.47);
-  box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.47);
+  -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.03);
+  -moz-box-shadow: 0 2px 0 rgba(0,0,0,0.03);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.03);
 }
 
 .message--user span {
   float: right;
-  background-color: $logo-blue;
+  background-color: #00D169;
   color: white;
 }
 
 .message--apentu span {
   float: left;
-  background-color: $grey-color-light;
-  border: 1px solid $grey-color;
+  background-color: white;
+  border: 1px solid darken($grey-color-light, 10%);
+}
+
+.features {
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  span {
+    display: block;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
