@@ -1,0 +1,31 @@
+.site-header {
+  height: 60px;
+}
+
+.site-logo {
+  height: 50px;
+  margin: 5px 0;
+}
+.main-nav {
+  display: inline-block;
+  float: right;
+}
+.main-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  float: right;
+  li {
+    line-height: 60px;
+    float: left;
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.hero {
+  background-image: url("/assets/img/layout/gilles-lambert-8649.jpg");
+  padding: 20px 0;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+
+.hero-head {
+  h1 {
+    color: white;
+  }
+  a {
+    margin-top: 20px;
+  }
+}
+
+.message-container {
+  padding: 20px;
+  clear: both;
+}
+
+.messages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+
+.message--user,
+.message--apentu  {
+  display: block;
+  clear: both;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.message--user span,
+.message--apentu span {
+  padding: 12px;
+  margin-bottom: 12px;
+  display: inline-block;
+  border-radius: 5px;
+  max-width: 60%;
+  word-wrap: break-word;
+  clear: both;
+  -webkit-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.47);
+  -moz-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.47);
+  box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.47);
+}
+
+.message--user span {
+  float: right;
+  background-color: $logo-blue;
+  color: white;
+}
+
+.message--apentu span {
+  float: left;
+  background-color: $grey-color-light;
+  border: 1px solid $grey-color;
+}

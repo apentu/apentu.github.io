@@ -1,0 +1,30 @@
+.apentu-btn {
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid white;
+}
+
+.apentu-btn--clear {
+  color: white;
+  border: 1px solid white;
+  &:hover {
+    background-color: $logo-blue;
+    border: 1px solid $logo-blue;
+  }
+}
+
+.apentu-btn--lightblue {
+  color: white;
+  background-color: $lightblue-one;
+  border-color: $lightblue-one;
+  &:hover {
+    background-color: $background-color;
+    color: $lightblue-one;
+  }
+}
+
+.apentu-btn--floatright {
+  float: right;
+}

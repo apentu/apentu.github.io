@@ -1,0 +1,41 @@
+/**
+ * Basic styling
+ */
+ *, *:before, *:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+
+ ::-moz-selection {
+  background: $logo-blue;
+  color: white;
+}
+::selection {
+  background: $logo-blue;
+  color: white;
+}
+
+ body {
+   //padding: 20px 0 0 0;
+ }
+
+.wrapper {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+.wrapper-full {
+  width: 100%;
+}
+
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+       -o-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}

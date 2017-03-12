@@ -1,0 +1,14 @@
+.apentu-card {
+  height: 200px;
+  width: 100%;
+  background-color: white;
+}
+
+.apentu-card__header {
+  padding: 10px;
+  border-bottom: 1px solid $grey-color-light;
+}
+
+.apentu-card__header__icon {
+  float: right;
+}
