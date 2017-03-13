@@ -63,6 +63,9 @@ $header-height: 60px;
 
 .mobile-nav-grid {
   display: block;
+  @media screen and (min-width: $palm) {
+    display: none;
+  }
 }
 
 .mobile-nav {
