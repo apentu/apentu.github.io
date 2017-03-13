@@ -8,6 +8,12 @@ $card-padding: 20px;
   -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.03);
   -moz-box-shadow: 0 2px 0 rgba(0,0,0,0.03);
   box-shadow: 0 2px 0 rgba(0,0,0,0.03);
+  @media screen and (max-width: $palm) {
+    margin-bottom: 24px;
+    &.last-card {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .apentu-card__header,
