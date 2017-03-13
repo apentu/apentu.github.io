@@ -95,7 +95,7 @@ var showHideMessage = function showHideMessage(scrollPosition) {
 };
 
 window.addEventListener('scroll', function (e) {
-  var last_known_scroll_position = window.scrollY + (viewportHeight - 100);
+  var last_known_scroll_position = window.pageYOffset + (viewportHeight - 100);
   showHideMessage(last_known_scroll_position);
   console.log(last_known_scroll_position);
 });
