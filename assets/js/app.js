@@ -96,3 +96,17 @@ window.addEventListener('scroll', function (e) {
   showHideMessage(last_known_scroll_position);
   console.log(last_known_scroll_position);
 });
+
+var menuClosed = true;
+
+document.getElementById("mobile-menu").addEventListener("click", function() {
+  var mobileMenu = document.getElementById('mobile-nav');
+  if (menuClosed) {
+    mobileMenu.classList.add('open');
+    menuClosed = false;
+  } else {
+    mobileMenu.classList.remove('open');
+    menuClosed = true;
+  }
+  console.log("menu clicked");
+});

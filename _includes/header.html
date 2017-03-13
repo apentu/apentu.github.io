@@ -2,6 +2,7 @@
     <div class="wrapper">
         <div class="grid">
             <div class="grid__item">
+              <div class="main-site-header">
                 <a href="/"><img class="site-logo" src="{{ "/assets/img/layout/apentu-png.png" | relative_url }}" alt="Apentu" ></a>
                 <nav class="main-nav">
                     <ul class="main-navigation">
@@ -9,10 +10,20 @@
                         <li><a href="/pricing">Pricing</a></li>
                         <li><a href="/contact">Contact</a></li>
                     </ul>
+                    <span id="mobile-menu" class="menu-btn">MENU</span>
                 </nav>
+              </div>
             </div><!--
 
- -->
+         --><div class="grid__item mobile-nav-grid">
+               <nav id="mobile-nav" class="mobile-nav">
+                 <ul class="mobile-navigation">
+                     <li><a href="/">Home</a></li>
+                     <li><a href="/pricing">Pricing</a></li>
+                     <li><a href="/contact">Contact</a></li>
+                 </ul>
+               </nav>
+            </div>
         </div>
     </div>
 </header>

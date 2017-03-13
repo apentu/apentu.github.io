@@ -1,7 +1,12 @@
+$header-height: 60px;
+
 .site-header {
-  height: 60px;
   border-bottom: 1px solid lightgrey;
   background-color: white;
+}
+
+.main-site-header {
+  height: $header-height;
 }
 
 .site-logo {
@@ -18,8 +23,11 @@
   margin: 0;
   display: inline-block;
   float: right;
+  @media screen and (max-width: $palm) {
+    display: none;
+  }
   li {
-    line-height: 60px;
+    line-height: $header-height;
     float: left;
     &:last-child {
     }
@@ -35,5 +43,55 @@
         color: white;
       }
     }
+  }
+}
+
+.menu-btn {
+  font-family: 'Open Sans';
+  color: white;
+  line-height: $header-height;
+  border: 1px solid $logo-blue;
+  background-color: $logo-blue;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 12px;
+  @media screen and (min-width: $palm) {
+    display: none;
+  }
+}
+
+.mobile-nav-grid {
+  display: block;
+}
+
+.mobile-nav {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  opacity: 0;
+  height: 0;
+  transition: height .3s, opacity .6s;
+  overflow: hidden;
+  .mobile-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    li {
+      border-bottom: 1px solid lightgrey;
+      &:last-child {
+        border-bottom: 0;
+      }
+      a {
+        color: $logo-blue;
+        padding: 10px 0;
+        display: block;
+        text-decoration: none;
+      }
+    }
+  }
+  &.open {
+    height: 125px;
+    opacity: 1;
   }
 }
