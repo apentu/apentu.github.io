@@ -79,6 +79,7 @@ if (!Array.from) {
 
 var messages = Array.from(document.querySelectorAll('.messages li'));
 var viewportHeight = window.innerHeight;
+console.log("Height = " + viewportHeight);
 
 var showHideMessage = function showHideMessage(scrollPosition) {
   console.log("function ran");
