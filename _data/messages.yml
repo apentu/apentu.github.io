@@ -11,5 +11,5 @@
 - message: We will contact you as soon as something comes in. Have a great evening!
   type: apentu
   
- - message: Excellent! Looking forward to it. 
- 	type: user
+- message: Excellent! Looking forward to it. 
+  type: user
