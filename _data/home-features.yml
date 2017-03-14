@@ -5,15 +5,15 @@ feature-text: Some of the key features of Apentu.
 
 # You can insert your own icons from font-awesome jut find one you like here and insert the <i> text they give you http://fontawesome.io/icons/
 card-features:
-  - title: Highly accurate availability 
+  - title: Incredibly accurate availability 
     icon: <i class="fa fa-paper-plane" aria-hidden="true"></i>
 
     text: Apentu collects candidate availability out of normal hours at a time to suit them. So your availability list is always more up to date than your competitors.
 
-  - title: Increase Consultant Effeciency
+  - title: Increase consultant effeciency
     icon: <i class="fa fa-users" aria-hidden="true"></i>
     text: Apentu can contact thousands of candidates symoltaneously. Freeing up your consultants to do, what they do best. 
     
-  - title: More time at critical times in the day
+  - title: More time at critical points in your day
     icon: <i class="fa fa-clock-o" aria-hidden="true"></i>
     text: No more calling around candidates to see who is availability at bookout times. Just placement after gorious placement.
