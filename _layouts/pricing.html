@@ -11,7 +11,7 @@ layout: default
       </div>
     </div>
     <div class="grid">
-      <div class="grid__item palm--one-whole desk--one-third">
+      <div class="grid__item palm--one-whole lap--one-third desk--one-third">
         <div class="pricing-card">
           <div class="pricing-card__header">
             <span class="pricing-card__header__title">Basic</span>
@@ -19,12 +19,12 @@ layout: default
           <div class="pricing-card__content">
             <a class="apentu-btn apentu-btn--fullwidth apentu-btn--lightblue--reverse" href="#">Request Info</a>
             <ul>
-              {% for feature in site.data.features %}
+              {% for feature in site.data.pricing %}
               {% if feature.basic == true %}
               <li><span><i class="fa fa-check" aria-hidden="true"></i></span>{{ feature.name }}</li>
               {% endif %}
               {% endfor %}
-              {% for feature in site.data.features %}
+              {% for feature in site.data.pricing %}
               {% if feature.basic == false %}
               <li class="no-feature"><span><i class="fa fa-times" aria-hidden="true"></i></span>{{ feature.name }}</li>
               {% endif %}
@@ -36,7 +36,7 @@ layout: default
           </div>
         </div>
       </div><!--
-   --><div class="grid__item palm--one-whole desk--one-third">
+   --><div class="grid__item palm--one-whole lap--one-third desk--one-third">
         <div class="pricing-card">
           <div class="pricing-card__header">
             <span class="pricing-card__header__title">Standard</span>
@@ -44,12 +44,12 @@ layout: default
           <div class="pricing-card__content">
             <a class="apentu-btn apentu-btn--fullwidth apentu-btn--lightblue--reverse" href="#">Request Info</a>
             <ul>
-              {% for feature in site.data.features %}
+              {% for feature in site.data.pricing %}
               {% if feature.standard == true %}
               <li><span><i class="fa fa-check" aria-hidden="true"></i></span>{{ feature.name }}</li>
               {% endif %}
               {% endfor %}
-              {% for feature in site.data.features %}
+              {% for feature in site.data.pricing %}
               {% if feature.standard == false %}
               <li class="no-feature"><span><i class="fa fa-times" aria-hidden="true"></i></span>{{ feature.name }}</li>
               {% endif %}
@@ -58,7 +58,7 @@ layout: default
           </div>
         </div>
       </div><!--
-   --><div class="grid__item palm--one-whole desk--one-third">
+   --><div class="grid__item palm--one-whole lap--one-third desk--one-third">
         <div class="pricing-card last-card">
           <div class="pricing-card__header pricing-card__header--premium">
             <span class="pricing-card__header__title">Premium</span>
@@ -66,12 +66,12 @@ layout: default
           <div class="pricing-card__content pricing-card__content--premium">
             <a class="apentu-btn apentu-btn--fullwidth apentu-btn--logoblue--reverse" href="#">Request Info</a>
             <ul>
-              {% for feature in site.data.features %}
+              {% for feature in site.data.pricing %}
               {% if feature.premium == true %}
               <li><span><i class="fa fa-check" aria-hidden="true"></i></span>{{ feature.name }}</li>
               {% endif %}
               {% endfor %}
-              {% for feature in site.data.features %}
+              {% for feature in site.data.pricing %}
               {% if feature.premium == false %}
               <li class="no-feature"><span><i class="fa fa-times" aria-hidden="true"></i></span>{{ feature.name }}</li>
               {% endif %}

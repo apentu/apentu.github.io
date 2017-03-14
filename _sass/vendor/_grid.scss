@@ -121,8 +121,8 @@ $use-markup-fix:        true !default;
  * that the breakpoint fires at.
  */
 $breakpoints: (
-    'palm' '(max-width: 480px)',
-    'lap' '(min-width: 481px) and (max-width: 1023px)',
+    'palm' '(max-width: 699px)',
+    'lap' '(min-width: 700px) and (max-width: 1023px)',
     'portable' '(max-width: 1023px)',
     'desk' '(min-width: 1024px)'
 ) !default;

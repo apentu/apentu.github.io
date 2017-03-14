@@ -1,0 +1,18 @@
+feature-heading: Our Features
+feature-text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat.
+
+# Three feature boxes below. Going to look for a better way to do this
+
+# You can insert your own icons from font-awesome jut find one you like here and insert the <i> text they give you http://fontawesome.io/icons/
+card-features:
+  - title: Feature One
+    icon: <i class="fa fa-clock-o" aria-hidden="true"></i>
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat.
+
+  - title: Feature Two
+    icon: <i class="fa fa-users" aria-hidden="true"></i>
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat.
+
+  - title: Feature Three
+    icon: <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat.

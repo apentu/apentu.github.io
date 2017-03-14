@@ -1,0 +1,35 @@
+# The following is the hero title
+hero: Never miss a placement opportunity with Apentu.
+hero-button: Get in Touch
+
+# Below is the info next to the messages
+
+title: Lorem Newpsum
+button: See Demonstration
+
+# Hello TJ. The style below is for paragraphs. To add another for example just start a new line and '- >' then the content
+# inline with the '>' as below. Looking for a cleaner way to let you edit stuff. I know there is.
+content:
+  - >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et scelerisque tellus,
+    eu sollicitudin sapien. Suspendisse iaculis erat nisi, nec finibus ipsum pellentesque
+    quis. Vestibulum dignissim in urna in suscipit. Duis viverra tortor ac felis mattis
+    vulputate at a libero. Nullam eget facilisis dolor.
+    Curabitur id arcu ac mi aliquam placerat. Proin pharetra nunc et sodales porttitor.
+    Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst.
+    Donec porttitor varius finibus. Suspendisse porttitor leo urna, eget ullamcorper diam suscipit at.
+    Nullam varius quam congue nibh vehicula posuere.
+
+  - >
+    Duis viverra et diam mollis ultrices. Morbi sed sapien vel mauris consequat tempor.
+    Fusce efficitur nisi vel elit viverra tempus. Aenean eget orci ultricies,
+    vehicula lectus sit amet, lobortis nulla. Phasellus egestas felis
+    leo, nec maximus nibh congue eu. Pellentesque lacinia risus eget sapien ornare,
+    nec semper ex fringilla. Sed ac purus mauris. Nulla molestie fermentum eros a feugiat.
+
+  - >
+    Curabitur semper ipsum quis sapien ornare finibus. Interdum et malesuada fames ac ante ipsum
+    primis in faucibus. In nec nisi aliquam, hendrerit nisi id, vulputate purus. Pellentesque placerat
+    eleifend nunc, sed ultrices dui venenatis eu. Sed nec tincidunt magna. Morbi sed elit a metus tincidunt
+    commodo. Duis vestibulum velit quis sollicitudin dapibus. Phasellus faucibus commodo erat, vitae
+    consectetur neque.

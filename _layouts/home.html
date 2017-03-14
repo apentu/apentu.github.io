@@ -7,8 +7,8 @@ layout: default
       <div class="wrapper">
         <div class="grid">
           <div class="grid__item one-half hero-head">
-            <h1>Never miss a placement opportunity with Apentu.</h1>
-            <a class="apentu-btn apentu-btn--clear" href="#">Get in Touch</a>
+            <h1>{{ site.data.homepage.hero }}</h1>
+            <a class="apentu-btn apentu-btn--clear" href="/contact">{{ site.data.homepage.hero-button }}</a>
           </div>
         </div>
       </div>
@@ -30,10 +30,11 @@ layout: default
         </div><!--
 
      --><div class="grid__item palm--one-whole desk--one-half home-info">
-          <h1>Lorem Ipsum</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat. Cras nulla tellus, condimentum vitae semper pellentesque, pellentesque ac nisi. Pellentesque ac sem nec dui sollicitudin rhoncus a tincidunt urna. Donec id placerat velit. Etiam a sem a velit imperdiet euismod. Curabitur vestibulum, neque at vehicula sollicitudin, lacus ex tincidunt quam, in faucibus tellus enim quis felis. Donec cursus dui et libero porta, quis ornare felis bibendum. Sed vehicula ullamcorper massa vel consectetur. Nulla maximus purus leo, sed lacinia arcu consectetur nec. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce at feugiat ligula. Phasellus rutrum diam nec mollis faucibus. Etiam et nisi vitae nulla dapibus imperdiet. </p>
-          <p>Donec libero ligula, porttitor ut nisl sed, condimentum aliquam lectus. Donec eget mi ut quam finibus tincidunt. Etiam nec nisl nisl. Nam ac justo et nisl rutrum imperdiet. Morbi ullamcorper arcu id lacus fringilla rhoncus. Maecenas odio nisl, sollicitudin et faucibus bibendum, aliquam et nunc. Donec pulvinar, massa sed pharetra rhoncus, nibh risus pulvinar magna, nec egestas ipsum arcu sed tellus.</p>
-          <a class="apentu-btn apentu-btn--lightblue apentu-btn--floatright" href="#">See Demonstration</a>
+          <h1>{{ site.data.homepage.title }}</h1>
+          {% for paragraph in site.data.homepage.content %}
+          <p>{{ paragraph }}</p>
+          {% endfor %}
+          <a class="apentu-btn apentu-btn--lightblue apentu-btn--floatright" href="#">{{ site.data.homepage.button }}</a>
         </div>
       </div>
     </div>
@@ -44,46 +45,32 @@ layout: default
     <div class="wrapper">
       <div class="grid grid--center">
         <div class="grid__item palm--one-whole desk--two-thirds features">
-          <h1>Our Features</h1>
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat.</span>
+          <h1>{{ site.data.home-features.feature-heading }}</h1>
+          <span>{{ site.data.home-features.feature-text }}</span>
         </div>
       </div>
       <div class="grid">
-        <div class="grid__item palm--one-whole desk--one-third">
+        {% for feature in site.data.home-features.card-features %}
+        {% if forloop.first == true %}
+        <div class="grid__item palm--one-whole lap--one-third desk--one-third">
+          {% else %}
+        --><div class="grid__item palm--one-whole lap--one-third desk--one-third">
+        {% endif %}
           <div class="apentu-card">
             <div class="apentu-card__header">
-              <span class="apentu-card__header__title">Feature One</span>
-              <span class="apentu-card__header__icon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+              <span class="apentu-card__header__title">{{ feature.title }}</span>
+              <span class="apentu-card__header__icon">{{ feature.icon }}</span>
             </div>
             <div class="apentu-card__content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat.
+              {{ feature.text }}
             </div>
           </div>
-        </div><!--
-
-     --><div class="grid__item palm--one-whole desk--one-third">
-         <div class="apentu-card">
-           <div class="apentu-card__header">
-             <span class="apentu-card__header__title">Feature Two</span>
-             <span class="apentu-card__header__icon"><i class="fa fa-users" aria-hidden="true"></i></span>
-           </div>
-           <div class="apentu-card__content">
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat.
-           </div>
-         </div>
-        </div><!--
-
-     --><div class="grid__item palm--one-whole desk--one-third">
-         <div class="apentu-card last-card">
-           <div class="apentu-card__header">
-             <span class="apentu-card__header__title">Feature Three</span>
-             <span class="apentu-card__header__icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
-           </div>
-           <div class="apentu-card__content">
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat.
-           </div>
-         </div>
-        </div>
+        {% if forloop.last == true %}
+      </div>
+      {% else %}
+    </div>{{ site.data.helper.comment-tag }}
+    {% endif %}
+        {% endfor %}
       </div>
     </div>
   </div>

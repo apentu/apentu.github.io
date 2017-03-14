@@ -36,10 +36,10 @@ $content-width:    1070px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-$palm: 480px;
-$lap: '(min-width: 481px) and (max-width: 1023px)';
-$portable: '(max-width: 1023px)';
-$desk: '(min-width: 1024px)';
+$palm: 699px;
+$lap: 1023px;
+$portable: 1023px;
+$desk: 1024px;
 
 // Minima also includes a mixin for defining media queries.
 // Use media queries like this:

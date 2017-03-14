@@ -77,6 +77,8 @@ if (!Array.from) {
   }());
 }
 
+// Message animation code below.
+
 var messages = Array.from(document.querySelectorAll('.messages li'));
 var viewportHeight = window.innerHeight;
 
@@ -90,12 +92,16 @@ var showHideMessage = function showHideMessage(scrollPosition) {
   }
 };
 
+showHideMessage(window.pageYOffset + (viewportHeight - 100));
+
 window.addEventListener('scroll', function (e) {
   // changed to pageYOffset from scrollY due to incompatibility with IE
   var last_known_scroll_position = window.pageYOffset + (viewportHeight - 100);
   showHideMessage(last_known_scroll_position);
   console.log(last_known_scroll_position);
 });
+
+// Menu toggle below
 
 var menuClosed = true;
 
