@@ -1,18 +1,19 @@
 feature-heading: Our Features
-feature-text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat.
+feature-text: Some of the key features of Apentu.
 
 # Three feature boxes below. Going to look for a better way to do this
 
 # You can insert your own icons from font-awesome jut find one you like here and insert the <i> text they give you http://fontawesome.io/icons/
 card-features:
-  - title: Feature Test
-    icon: <i class="fa fa-clock-o" aria-hidden="true"></i>
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat.
+  - title: Highly accurate availability 
+    icon: <i class="fa fa-paper-plane" aria-hidden="true"></i>
 
-  - title: Feature Two
+    text: Apentu collects candidate availability out of normal hours at a time to suit them. So your availability list is always more up to date than your competitors.
+
+  - title: Increase Consultant Effeciency
     icon: <i class="fa fa-users" aria-hidden="true"></i>
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat.
-
-  - title: Feature Three
-    icon: <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat.
+    text: Apentu can contact thousands of candidates symoltaneously. Freeing up your consultants to do, what they do best. 
+    
+  - title: More time at critical times in the day
+    icon: <i class="fa fa-clock-o" aria-hidden="true"></i>
+    text: No more calling around candidates to see who is availability at bookout times. Just placement after gorious placement.
