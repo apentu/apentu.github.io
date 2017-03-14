@@ -1,7 +1,7 @@
 - message: Hi Sarah, ABC Agency here. Are you availability for work tomorrow?
   type: apentu
 
-- message: Sure
+- message: Sure thing.
   type: user
 
 - message: Ok great. It promises to be a lovely day. 
@@ -10,3 +10,6 @@
 
 - message: We will contact you as soon as something comes in. Have a great evening!
   type: apentu
+  
+ - message: Excellent! Looking forward to it. 
+ 	type: user
