@@ -1,18 +1,12 @@
-- message: Proin interdum, justo eget hendrerit luctus, mauris lectus interdum elit, vel elementum sem mi sed erat.
-  type: user
-
-- message: Nulla sed ipsum dapibus, imperdiet velit eget, faucibus nisi.
+- message: Hi Sarah, ABC Agency here. Are you availability for work tomorrow?
   type: apentu
 
-- message: Quisque euismod tincidunt leo sit amet gravida. Sed ultricies a nulla eget efficitur.
+- message: Sure
   type: user
 
-
-- message: Nunc dapibus elementum elementum. Aliquam ornare nibh non ligula vehicula bibendum.
+- message: Ok great. It promises to be a lovely day. 
   type: apentu
 
-- message: Nulla facilisi
-  type: user
 
-- message: Duis fringilla sed nibh vitae consectetur. Cras id elit vel felis egestas egestas.
+- message: We will contact you as soon as something comes in. Have a great evening!
   type: apentu
