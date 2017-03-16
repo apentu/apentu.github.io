@@ -1,4 +1,4 @@
-$icon-size: 25px;
+$icon-size: 40px;
 $card-padding: 20px;
 
 .apentu-card,
@@ -16,6 +16,10 @@ $card-padding: 20px;
   }
 }
 
+.apentu-card {
+  border-top: 5px solid $logo-blue;
+}
+
 .apentu-card__header,
 .pricing-card__header {
   padding: $card-padding;
@@ -27,18 +31,29 @@ $card-padding: 20px;
   font-size: 20px;
   font-weight: 700;
   color: $dark-blue-one;
-  line-height: $icon-size;
+}
+
+.apentu-card__header__title {
+  display: block;
+  text-align: center;
+  font-size: 16px;
 }
 
 .apentu-card__header__icon {
-  float: right;
+  text-align: center;
+  display: block;
   font-size: $icon-size;
   color: $logo-blue;
+  margin-bottom: 10px;
 }
 
 .apentu-card__content,
 .pricing-card__content {
   padding: $card-padding;
+}
+
+.apentu-card__content {
+  text-align: center;
 }
 
 .pricing-card__header {
