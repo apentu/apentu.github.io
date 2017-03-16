@@ -1,5 +1,6 @@
 .contact-form {
   width: 100%;
+  margin-top: 40px;
   label {
     display: block;
     margin-bottom: 10px;
@@ -11,4 +12,9 @@
     margin-bottom: 20px;
     border: 1px solid $grey-color-light;
   }
+}
+
+.messenger-image {
+  //margin-top: 50px;
+  text-align: center;
 }

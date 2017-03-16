@@ -1,59 +1,59 @@
-- name: Lorem
+- name: Lorem ipsum dolor sit amet
   basic: true
   standard: true
   premium: true
 
-- name: Ipsum
+- name: Lorem ipsum dolor sit amet
   basic: true
   standard: true
   premium: true
 
-- name: Lorem
+- name: Lorem ipsum dolor sit amet
   basic: true
   standard: true
   premium: true
 
-- name: Ipsum
+- name: Lorem ipsum dolor sit amet
   basic: true
   standard: true
   premium: true
 
-- name: Lorem
+- name: Lorem ipsum dolor sit amet
   basic: false
   standard: true
   premium: true
 
-- name: Ipsum
+- name: Lorem ipsum dolor sit amet
   basic: true
   standard: true
   premium: true
 
-- name: Lorem
+- name: Lorem ipsum dolor sit amet
   basic: false
   standard: true
   premium: true
 
-- name: Ipsum
-  basic: false
-  standard: false
-  premium: true
-
-- name: Lorem
+- name: Lorem ipsum dolor sit amet
   basic: false
   standard: false
   premium: true
 
-- name: Ipsum
+- name: Lorem ipsum dolor sit amet
   basic: false
   standard: false
   premium: true
 
-- name: Lorem
+- name: Lorem ipsum dolor sit amet
+  basic: false
+  standard: false
+  premium: true
+
+- name: Lorem ipsum dolor sit amet
   basic: true
   standard: true
   premium: true
 
-- name: Ipsum
+- name: Lorem ipsum dolor sit amet
   basic: true
   standard: true
   premium: true

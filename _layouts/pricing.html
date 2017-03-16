@@ -6,8 +6,8 @@ layout: default
   <div class="wrapper">
     <div class="grid grid--center">
       <div class="grid__item palm--one-whole desk--two-thirds pricing">
-        <h1>Pricing</h1>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla consequat massa ac lacinia. Nulla rhoncus mi sit amet enim sagittis consequat.</span>
+        <h1>{{ site.data.pricing-info.title }}</h1>
+        <span>{{ site.data.pricing-info.blurb }}</span>
       </div>
     </div>
     <div class="grid">
@@ -17,14 +17,14 @@ layout: default
             <span class="pricing-card__header__title">Basic</span>
           </div>
           <div class="pricing-card__content">
-            <a class="apentu-btn apentu-btn--fullwidth apentu-btn--lightblue--reverse" href="#">Request Info</a>
+            <span class="pricing-card__content__blurb">{{ site.data.pricing-info.basic-blurb }}</span>
             <ul>
-              {% for feature in site.data.pricing %}
+              {% for feature in site.data.pricing-features %}
               {% if feature.basic == true %}
               <li><span><i class="fa fa-check" aria-hidden="true"></i></span>{{ feature.name }}</li>
               {% endif %}
               {% endfor %}
-              {% for feature in site.data.pricing %}
+              {% for feature in site.data.pricing-features %}
               {% if feature.basic == false %}
               <li class="no-feature"><span><i class="fa fa-times" aria-hidden="true"></i></span>{{ feature.name }}</li>
               {% endif %}
@@ -33,6 +33,7 @@ layout: default
               <li><span><i class="fa fa-check" aria-hidden="true"></i></span>Item 3</li>
               <li><span><i class="fa fa-check" aria-hidden="true"></i></span>Item 4</li> -->
             </ul>
+            <a class="apentu-btn apentu-btn--fullwidth apentu-btn--lightblue--reverse" href="#">Request Info</a>
           </div>
         </div>
       </div><!--
@@ -42,19 +43,20 @@ layout: default
             <span class="pricing-card__header__title">Standard</span>
           </div>
           <div class="pricing-card__content">
-            <a class="apentu-btn apentu-btn--fullwidth apentu-btn--lightblue--reverse" href="#">Request Info</a>
+            <span class="pricing-card__content__blurb">{{ site.data.pricing-info.standard-blurb }}</span>
             <ul>
-              {% for feature in site.data.pricing %}
+              {% for feature in site.data.pricing-features %}
               {% if feature.standard == true %}
               <li><span><i class="fa fa-check" aria-hidden="true"></i></span>{{ feature.name }}</li>
               {% endif %}
               {% endfor %}
-              {% for feature in site.data.pricing %}
+              {% for feature in site.data.pricing-features %}
               {% if feature.standard == false %}
               <li class="no-feature"><span><i class="fa fa-times" aria-hidden="true"></i></span>{{ feature.name }}</li>
               {% endif %}
               {% endfor %}
             </ul>
+            <a class="apentu-btn apentu-btn--fullwidth apentu-btn--lightblue--reverse" href="#">Request Info</a>
           </div>
         </div>
       </div><!--
@@ -64,19 +66,20 @@ layout: default
             <span class="pricing-card__header__title">Premium</span>
           </div>
           <div class="pricing-card__content pricing-card__content--premium">
-            <a class="apentu-btn apentu-btn--fullwidth apentu-btn--logoblue--reverse" href="#">Request Info</a>
+            <span class="pricing-card__content__blurb">{{ site.data.pricing-info.premium-blurb }}</span>
             <ul>
-              {% for feature in site.data.pricing %}
+              {% for feature in site.data.pricing-features %}
               {% if feature.premium == true %}
               <li><span><i class="fa fa-check" aria-hidden="true"></i></span>{{ feature.name }}</li>
               {% endif %}
               {% endfor %}
-              {% for feature in site.data.pricing %}
+              {% for feature in site.data.pricing-features %}
               {% if feature.premium == false %}
               <li class="no-feature"><span><i class="fa fa-times" aria-hidden="true"></i></span>{{ feature.name }}</li>
               {% endif %}
               {% endfor %}
             </ul>
+            <a class="apentu-btn apentu-btn--fullwidth apentu-btn--logoblue--reverse" href="#">Request Info</a>
           </div>
         </div>
       </div>
