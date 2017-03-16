@@ -1,59 +1,30 @@
-- name: Lorem ipsum dolor sit amet
+- name: Messaging avatar Branded to your Agency
   basic: true
   standard: true
   premium: true
 
-- name: Lorem ipsum dolor sit amet
+- name: Unlimited Messages 
   basic: true
   standard: true
   premium: true
 
-- name: Lorem ipsum dolor sit amet
+- name: Real time mode
   basic: true
   standard: true
   premium: true
 
-- name: Lorem ipsum dolor sit amet
+- name: Customise messages to make them more personal
   basic: true
   standard: true
   premium: true
 
-- name: Lorem ipsum dolor sit amet
-  basic: false
-  standard: true
-  premium: true
-
-- name: Lorem ipsum dolor sit amet
+- name: Recruitment software integration
   basic: true
   standard: true
   premium: true
 
-- name: Lorem ipsum dolor sit amet
-  basic: false
-  standard: true
-  premium: true
-
-- name: Lorem ipsum dolor sit amet
-  basic: false
-  standard: false
-  premium: true
-
-- name: Lorem ipsum dolor sit amet
-  basic: false
-  standard: false
-  premium: true
-
-- name: Lorem ipsum dolor sit amet
-  basic: false
-  standard: false
-  premium: true
-
-- name: Lorem ipsum dolor sit amet
+- name: 21 day free trial
   basic: true
   standard: true
   premium: true
 
-- name: Lorem ipsum dolor sit amet
-  basic: true
-  standard: true
-  premium: true
