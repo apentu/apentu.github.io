@@ -98,7 +98,7 @@ window.addEventListener('scroll', function (e) {
   // changed to pageYOffset from scrollY due to incompatibility with IE
   var last_known_scroll_position = window.pageYOffset + (viewportHeight - 100);
   showHideMessage(last_known_scroll_position);
-  console.log(last_known_scroll_position);
+  //console.log(last_known_scroll_position);
 });
 
 // Menu toggle below
@@ -116,3 +116,28 @@ document.getElementById("mobile-menu").addEventListener("click", function() {
   }
   console.log("menu clicked");
 });
+
+// Apentu card height
+
+var featureCards = Array.from(document.querySelectorAll('.apentu-card'));
+
+var getApentuCardMaxHeight = function() {
+  var maxHeight = 0;
+  for (var i = 0; i < featureCards.length; i++) {
+    var cardHeight = featureCards[i].offsetHeight;
+    if(cardHeight > maxHeight) {
+      maxHeight = cardHeight;
+    }
+  }
+  return maxHeight;
+}
+
+var setApentuCardHeight = function() {
+  var heightToSet = String(getApentuCardMaxHeight());
+  var heightPixels = heightToSet + "px";
+  for (var i = 0; i < featureCards.length; i++) {
+    featureCards[i].style.height = heightPixels;
+  }
+}
+
+setApentuCardHeight();
