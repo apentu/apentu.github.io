@@ -1,3 +1,18 @@
+- name: £1.04 per candidate per month
+  basic: true
+  standard: false
+  premium: false
+
+- name: £1.00 per candidate per month
+  basic: false
+  standard: true
+  premium: false
+
+- name: £0.90 per candidate per month
+  basic: false
+  standard: false
+  premium: true
+
 - name: Messaging avatar branded to your Agency
   basic: true
   standard: true
