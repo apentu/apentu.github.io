@@ -42,4 +42,19 @@
   basic: true
   standard: true
   premium: true
+  
+  - £259 per month
+  basic: true
+  standard: false
+  premium: false
+  
+  - name: £499 per month
+  basic: false
+  standard: true
+  premium: false
+  
+  - name: £899 per month
+  basic: false
+  standard: false
+  premium: true
 
