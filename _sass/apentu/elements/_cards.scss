@@ -76,7 +76,7 @@ $card-padding: 20px;
     padding: 0;
     margin: 0;
     li {
-      font-size: 14px;
+      font-size: 13px;
       padding: 10px;
       border-bottom: 1px solid $grey-color-light;
       &:last-child {
@@ -85,10 +85,11 @@ $card-padding: 20px;
       }
     }
   }
-  span {
+  .pricing-card__content__icon {
     color: $lightblue-one;
     margin-right: 10px;
   }
+
   .fa-times {
     color: $red;
   }
@@ -99,7 +100,7 @@ $card-padding: 20px;
 }
 
 .pricing-card__content--premium {
-  span {
+  .pricing-card__content__icon {
     color: $logo-blue;
   }
 }

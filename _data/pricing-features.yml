@@ -2,59 +2,70 @@
   basic: true
   standard: false
   premium: false
+  enterprise: true
 
 - name: £1.00 per candidate per month
   basic: false
   standard: true
   premium: false
+  enterprise: true
 
 - name: £0.90 per candidate per month
   basic: false
   standard: false
   premium: true
+  enterprise: true
 
 - name: Messaging avatar branded to your Agency
   basic: true
   standard: true
   premium: true
+  enterprise: true
 
-- name: Unlimited messages 
+- name: Unlimited messages
   basic: true
   standard: true
   premium: true
+  enterprise: true
 
 - name: Real time mode
   basic: true
   standard: true
   premium: true
+  enterprise: true
 
 - name: Customise messages to make them more personal
   basic: true
   standard: true
   premium: true
+  enterprise: true
 
 - name: Recruitment software integration
   basic: true
   standard: true
   premium: true
+  enterprise: true
 
 - name: 21 day free trial
   basic: true
   standard: true
   premium: true
-  
-  - £259 per month
+  enterprise: true
+
+- name: £259 per month
   basic: true
   standard: false
   premium: false
-  
-  - name: £499 per month
+  enterprise: true
+
+- name: £499 per month
   basic: false
   standard: true
   premium: false
-  
-  - name: £899 per month
+  enterprise: true
+
+- name: £899 per month
   basic: false
   standard: false
   premium: true
-
+  enterprise: true
