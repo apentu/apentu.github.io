@@ -1,9 +1,9 @@
-- name: Messaging avatar Branded to your Agency
+- name: Messaging avatar branded to your Agency
   basic: true
   standard: true
   premium: true
 
-- name: Unlimited Messages 
+- name: Unlimited messages 
   basic: true
   standard: true
   premium: true
