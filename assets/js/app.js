@@ -119,25 +119,25 @@ document.getElementById("mobile-menu").addEventListener("click", function() {
 
 // Apentu card height
 
-var featureCards = Array.from(document.querySelectorAll('.apentu-card'));
-
-var getApentuCardMaxHeight = function() {
-  var maxHeight = 0;
-  for (var i = 0; i < featureCards.length; i++) {
-    var cardHeight = featureCards[i].offsetHeight;
-    if(cardHeight > maxHeight) {
-      maxHeight = cardHeight;
-    }
-  }
-  return maxHeight;
-}
-
-var setApentuCardHeight = function() {
-  var heightToSet = String(getApentuCardMaxHeight());
-  var heightPixels = heightToSet + "px";
-  for (var i = 0; i < featureCards.length; i++) {
-    featureCards[i].style.height = heightPixels;
-  }
-}
-
-setApentuCardHeight();
+// var featureCards = Array.from(document.querySelectorAll('.apentu-card'));
+//
+// var getApentuCardMaxHeight = function() {
+//   var maxHeight = 0;
+//   for (var i = 0; i < featureCards.length; i++) {
+//     var cardHeight = featureCards[i].offsetHeight;
+//     if(cardHeight > maxHeight) {
+//       maxHeight = cardHeight;
+//     }
+//   }
+//   return maxHeight;
+// }
+//
+// var setApentuCardHeight = function() {
+//   var heightToSet = String(getApentuCardMaxHeight());
+//   var heightPixels = heightToSet + "px";
+//   for (var i = 0; i < featureCards.length; i++) {
+//     featureCards[i].style.height = heightPixels;
+//   }
+// }
+//
+// //setApentuCardHeight();
