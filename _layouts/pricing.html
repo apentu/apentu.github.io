@@ -11,7 +11,7 @@ layout: default
       </div>
     </div>
     <div class="grid">
-      <div class="grid__item palm--one-whole lap--one-third desk--one-quarter">
+      <div class="grid__item palm--one-whole lap--one-quarter desk--one-quarter">
         <div class="pricing-card">
           <div class="pricing-card__header">
             <span class="pricing-card__header__title">{{ site.data.pricing-info.basic-title }}</span>
@@ -21,7 +21,8 @@ layout: default
             <ul>
               {% for feature in site.data.pricing-features %}
               {% if feature.basic == true %}
-              <li><span class="pricing-card__content__icon"><i class="fa fa-check" aria-hidden="true"></i></span><span class="pricing-card__content__name">{{ feature.name }}</span></li>
+              <!-- <span class="pricing-card__content__icon"><i class="fa fa-check" aria-hidden="true"></i></span> -->
+              <li><span class="pricing-card__content__name">{{ feature.name }}</span></li>
               {% endif %}
               {% endfor %}
               <!-- <li><span><i class="fa fa-check" aria-hidden="true"></i></span>Item 2</li>
@@ -32,7 +33,7 @@ layout: default
           </div>
         </div>
       </div><!--
-   --><div class="grid__item palm--one-whole lap--one-third desk--one-quarter">
+   --><div class="grid__item palm--one-whole lap--one-quarter desk--one-quarter">
         <div class="pricing-card">
           <div class="pricing-card__header">
             <span class="pricing-card__header__title">{{ site.data.pricing-info.standard-title }}</span>
@@ -42,7 +43,7 @@ layout: default
             <ul>
               {% for feature in site.data.pricing-features %}
               {% if feature.standard == true %}
-              <li><span class="pricing-card__content__icon"><i class="fa fa-check" aria-hidden="true"></i></span><span class="pricing-card__content__name">{{ feature.name }}</span></li>
+              <li><span class="pricing-card__content__name">{{ feature.name }}</span></li>
               {% endif %}
               {% endfor %}
             </ul>
@@ -50,7 +51,7 @@ layout: default
           </div>
         </div>
       </div><!--
-   --><div class="grid__item palm--one-whole lap--one-third desk--one-quarter">
+   --><div class="grid__item palm--one-whole lap--one-quarter desk--one-quarter">
         <div class="pricing-card">
           <div class="pricing-card__header">
             <span class="pricing-card__header__title">{{ site.data.pricing-info.premium-title }}</span>
@@ -60,7 +61,7 @@ layout: default
             <ul>
               {% for feature in site.data.pricing-features %}
               {% if feature.premium == true %}
-              <li><span class="pricing-card__content__icon"><i class="fa fa-check" aria-hidden="true"></i></span><span class="pricing-card__content__name">{{ feature.name }}</span></li>
+              <li><span class="pricing-card__content__name">{{ feature.name }}</span></li>
               {% endif %}
               {% endfor %}
             </ul>
@@ -68,7 +69,7 @@ layout: default
           </div>
         </div>
       </div><!--
-    --><div class="grid__item palm--one-whole lap--one-third desk--one-quarter">
+    --><div class="grid__item palm--one-whole lap--one-quarter desk--one-quarter">
          <div class="pricing-card last-card">
            <div class="pricing-card__header pricing-card__header--premium">
              <span class="pricing-card__header__title">{{ site.data.pricing-info.enterprise-title }}</span>
@@ -78,7 +79,7 @@ layout: default
              <ul>
                {% for feature in site.data.pricing-features %}
                {% if feature.premium == true %}
-               <li><span class="pricing-card__content__icon"><i class="fa fa-check" aria-hidden="true"></i></span><span class="pricing-card__content__name">{{ feature.name }}</span></li>
+               <li><span class="pricing-card__content__name">{{ feature.name }}</span></li>
                {% endif %}
                {% endfor %}
              </ul>

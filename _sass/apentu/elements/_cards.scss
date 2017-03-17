@@ -77,8 +77,14 @@ $card-padding: 20px;
     margin: 0;
     li {
       font-size: 13px;
-      padding: 10px;
+      padding: 10px 10px 10px 18px;
       border-bottom: 1px solid $grey-color-light;
+      &:before {
+        font-family: 'FontAwesome';
+        color: $lightblue-one;
+        content: '\f00c';
+        margin: 0 5px 0 -18px;
+      }
       &:last-child {
         padding-bottom: 0;
         border: 0;
@@ -103,12 +109,19 @@ $card-padding: 20px;
   .pricing-card__content__icon {
     color: $logo-blue;
   }
+  ul {
+    li {
+      &:before {
+        color: $logo-blue;
+      }
+    }
+  }
 }
 
 span.pricing-card__content__blurb {
   display: block;
   margin-bottom: $card-padding;
-  font-size: 14px;
+  font-size: 15px;
   color: $grey-color-dark;
   text-align: center;
 }
