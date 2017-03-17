@@ -19,7 +19,7 @@ layout: default
   <div class="apentu-section apentu-section--platinum">
     <div class="wrapper">
       <div class="grid">
-        <div class="grid__item palm--one-whole desk--one-half">
+        <div class="grid__item palm--one-whole three-sixths">
             <div class="message-container">
               <ul class="messages">
                 {% for message in site.data.messages %}
@@ -29,12 +29,12 @@ layout: default
             </div>
         </div><!--
 
-     --><div class="grid__item palm--one-whole desk--one-half home-info">
+     --><div class="grid__item two-sixths push--desk--one-sixth lap--three-sixths palm--one-whole home-info">
           <h1>{{ site.data.homepage.title }}</h1>
           {% for paragraph in site.data.homepage.content %}
           <p>{{ paragraph }}</p>
           {% endfor %}
-          <a class="apentu-btn apentu-btn--lightblue apentu-btn--floatright" href="#">{{ site.data.homepage.button }}</a>
+          <a class="apentu-btn apentu-btn--lightblue apentu-btn--floatright apentu-btn--fullwidth" href="#">{{ site.data.homepage.button }}</a>
         </div>
       </div>
     </div>
