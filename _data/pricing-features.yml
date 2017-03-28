@@ -19,7 +19,7 @@
   - name: From £0.87 per candidate per month
   basic: false
   standard: false
-  premium: true
+  premium: false
   enterprise: true
 
 - name: Messaging avatar branded to your Agency
