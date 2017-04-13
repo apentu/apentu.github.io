@@ -56,7 +56,7 @@
   basic: true
   standard: true
   premium: true
-  enterprise: true
+  enterprise: false
 
 - name: £259 per month
   basic: true
