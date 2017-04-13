@@ -62,19 +62,19 @@
   basic: true
   standard: false
   premium: false
-  enterprise: true
+  enterprise: false
 
 - name: £499 per month
   basic: false
   standard: true
   premium: false
-  enterprise: true
+  enterprise: false
 
 - name: £899 per month
   basic: false
   standard: false
   premium: true
-  enterprise: true
+  enterprise: false
   
 - name: From £1299 per month
   basic: false
