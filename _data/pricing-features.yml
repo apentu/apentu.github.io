@@ -15,7 +15,7 @@
   standard: false
   premium: true
   enterprise: false
-  
+
 - name: From £0.87 per candidate per month
   basic: false
   standard: false
@@ -56,7 +56,7 @@
   basic: true
   standard: true
   premium: true
-  enterprise: false
+  enterprise: true
 
 - name: £259 per month
   basic: true
@@ -75,7 +75,7 @@
   standard: false
   premium: true
   enterprise: false
-  
+
 - name: From £1299 per month
   basic: false
   standard: false

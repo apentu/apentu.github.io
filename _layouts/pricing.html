@@ -78,7 +78,7 @@ layout: default
              <span class="pricing-card__content__blurb">{{ site.data.pricing-info.enterprise-blurb }}</span>
              <ul>
                {% for feature in site.data.pricing-features %}
-               {% if feature.premium == true %}
+               {% if feature.enterprise == true %}
                <li><span class="pricing-card__content__name">{{ feature.name }}</span></li>
                {% endif %}
                {% endfor %}
